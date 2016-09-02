@@ -15,8 +15,8 @@ mkdir -p $HOME/.ssh/
 mv config $HOME/.ssh/
 
 echo "================= Installing basic packages ==================="
-PACKAGES="build-essential ca-certificates libssl-dev git curl"
-apt-get install -y --no-install-recommends $PACKAGES
+PACKAGES="ca-certificates libssl-dev git curl"
+apt-get install -y --no-install-recommends build-essential $PACKAGES
 
 echo "================= Installing git-crypt ==================="
 git clone https://github.com/AGWA/git-crypt.git /tmp/git-crypt
